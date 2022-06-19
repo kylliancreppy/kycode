@@ -1,4 +1,54 @@
 <nav>
-
+  <%= link_to about_path, class: "navbar-brand" do %>
+    <%= "kycode" %>
+    <% end %>
+    <ul class="navbar-n">
+  <li>
+ <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "à propos" %>
+ </div>
+ <% end %>
+ </div>
+ </li>
+ <li>
+ <div class="navitem"><%= link_to projects_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "projets" %>
+ </div>
+ <% end %>
+ </div>
+ </li>
+ <li>
+ <div class="navitem"><%= link_to projects_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "Réseaux" %>
+ </div>
+ <% end %>
+ </div>
+ </li>
+  <li>
+ <div class="navitem"><%= link_to projects_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "RANKING" %>
+ </div>
+ <% end %>
+ </div>
+ </li>
+ </ul>
 </nav>
-<h1>Our first view 🚀</h1>
+<div class="container">
+<div class="card">
+    <div class="pic">
+        <%= image_tag "profile (2).jpg" %>
+    </div>
+    <div class="content">
+        <div class="details">
+            <h2>Kyllian Creppy <br><span>Développeur Full-stack junior</span></h2>
+            <div class="desc">
+            <h3>Bonjour, je suis Kyllian Creppy, Développeur Full-stack junior basé en Île-de-France. Je suis à la recherche d'un contrat alternance pour septembre 2022.</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
