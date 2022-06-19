@@ -36,7 +36,7 @@
     font-size: 7rem;
     position: absolute;
     text-align: center;
-    top:  40%;
+    top:  35%;
     left: 50%;
     margin: 0;
     padding: 0;
@@ -44,6 +44,21 @@
     color: white;
     text-shadow: 1px 1px #222324, 2px 2px #222324, 2px 3px #222324;
     font-family: 'Pokemon X and Y';
+  }
+
+  .home h2 {
+    font-size: 2.5rem;
+    position: absolute;
+    text-align: center;
+    top:  47%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-shadow: 1px 1px #222324, 2px 2px #222324, 2px 3px #222324;
+    font-family: 'Pokemon X and Y';
+
   }
 
   $color: #f8f354;

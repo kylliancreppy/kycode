@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 nav {
     display: flex;
     align-items: center;
@@ -53,7 +55,7 @@ nav {
   li {
     text-decoration: none;
   }
-
+/* 
   .container {
     display: flex;
     justify-content: center;
@@ -155,4 +157,126 @@ nav {
     opacity: 0.5;
 
   }
+*/
+
+section {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+
+.banner .imgSide img  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.banner .contentBx {
+  position: absolute ;
+  top:0;
+  left:100px;
+  width: calc(100% - 500px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .contentBx h4 {
+margin:0;
+  font-size: 1.5em;
+  color: #333;
+  font-weight: 300;
+}
+
+.banner .contentBx h4 span {
+  color:#f8f354;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.banner .contentBx h2 {
+  font-size: 3em;
+  color: #333;
+  line-height: 1em;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  background: #f8f354 ;
+  color: #ffff;
+  display: inline-block;
+  text-decoration: none;
+  padding:10px 30px;
+  margin-top: 1rem;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+}
+
+.title h2 {
+  position: relative;
+  color:#f8f354;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title p {
+  max-width: 700px;
+  display: inline-block;
+  color: #fff;
+}
+.title h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #fff;
+}
+
+.about {
+  background: #000;
+}
+
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about .content .textBx {
+  min-width: 49%;
+  width: 49%;
+}
+
+.about .content .textBx p {
+  color:#fff;
+}
+
+.about .content .imgBx {
+  margin-left: 40px;
+}
+
+.about .content .imgBx img {
+  max-width: 100%;
+
+}
+
+
 
