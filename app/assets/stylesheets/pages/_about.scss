@@ -187,7 +187,7 @@ img {
 }
 
 .services .content .servicesBx:hover {
-  background: #a7a10d;
+  background: #f8f354;
 }
 
 .services .content .servicesBx i {
@@ -207,11 +207,37 @@ img {
 
 .work .content .workBx {
   width: 50%;
+  height:70%;
   padding: 20px;
 }
 
 .work .content .workBx img {
   max-width: 100%;
+}
+
+.social .content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3em;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  color: #fff;
+
+}
+
+.social {
+  background: #111;
+}
+
+.socialBx {
+ transition: transform 0.3s;
+}
+
+.socialBx:hover {
+  color: #f8f354 ;
+  transform: scale(1.3);
+
+
 }
 /* 
   .container {

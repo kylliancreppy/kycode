@@ -65,7 +65,11 @@
 <ul>
 <li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
  <div class="itemcontent">
- <%= "à propos" %>
+ <%= "À propos" %>
+  <% end %></li>
+  <li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "Services" %>
   <% end %></li>
 <li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
  <div class="itemcontent">
@@ -136,19 +140,48 @@
 </div>
 <div class="content">
 <div class="workBx">
-<%= image_tag "bastien-plu-1y2FZgvE1F4-unsplash.jpg"%>
+<%= image_tag "leone-venter-VieM9BdZKFo-unsplash.jpg"%>
 </div>
 <div class="workBx">
-<%= image_tag "bastien-plu-1y2FZgvE1F4-unsplash.jpg"%>
+<%= image_tag "carlos-muza-hpjSkU2UYSU-unsplash.jpg"%>
 </div>
 <div class="workBx">
-<%= image_tag "bastien-plu-1y2FZgvE1F4-unsplash.jpg"%>
+<%= image_tag "kevin-bhagat-zNRITe8NPqY-unsplash.jpg"%>
 </div>
 <div class="workBx">
 <%= image_tag "sophie-UXIXa5fDI7s-unsplash.jpg"%>
 </div>
 </div>
+<div class="heading">
+<%= link_to about_path, class:"btn" do %>
+                        <%= "Voir plus" %>
+                        <% end %></div>
 </section>
+<section class="social">
+<div class="heading white">
+<h2>Réseaux sociaux</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus quis error non aperiam nesciunt consequuntur aliquam quam odio assumenda, ipsam quidem incidunt, distinctio dignissimos molestiae necessitatibus culpa! Minus, optio!</p>
+</div>
+<div class="content">
+<div class="socialBx">
+<i class="fa-brands fa-twitter"></i>
+</div>
+<div class="socialBx">
+<i class="fa-brands fa-github"></i>
+</div>
+<div class="socialBx">
+<i class="fa-brands fa-instagram"></i>
+</div>
+<div class="socialBx">
+<i class="fa-brands fa-stack-overflow"></i>
+</div>
+<div class="socialBx">
+<i class="fa-brands fa-linkedin"></i>
+</div>
+</div>
+</section>
+
+
 <script type="text/javascript">
 window.addEventListener('scroll',function (){
   var header = document.querySelector('header');
