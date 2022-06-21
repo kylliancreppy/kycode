@@ -57,13 +57,33 @@
 </div>
 
 -->
+<header>
+<%= link_to about_path, class:"logo" do %>
+ <%= "kycode" %>
+  <% end %>
+<div class="toggle"></div>
+<ul>
+<li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "à propos" %>
+  <% end %></li>
+<li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "Projets" %>
+  <% end %></li>
+<li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
+ <div class="itemcontent">
+ <%= "Réseaux" %>
+  <% end %></li>
+</ul>
+</header>
+</div>
 <section class="banner">
-    <div class="contentBx">
+</div>
+    <div class="textBx">
     <div>
-        <h4><span>Bonjour</span>, Je suis</h4>
-            <h2 class="name">Kyllian Creppy</h2>
-                <h4>Je suis Développeur Full-stack Junior</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit quaerat accusantium culpa fugit dicta non, odit ea velit neque.</p>
+            <h2 class="name">Bonjour, Je suis<br><span>Kyllian Creppy</span></h2>
+                <h3>Je suis Développeur Full-stack Junior</h3>
                         <%= link_to about_path, class:"btn" do %>
                         <%= "En savoir plus" %>
                         <% end %>
@@ -71,16 +91,67 @@
     </div>
 </section>
 
+
 <section class="about">
-<div class="title">
-<h2>À propos de moi</h2>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-</div>
+  <div class="heading">
+    <h2>À propos de moi</h2>
+  </div>
 <div class="content">
-<div class="textBx">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur ex libero, nam accusamus voluptatum <br> deleniti ducimus doloremque vitae sapiente voluptates illum fugiat tempore quae similique quia quo! Doloremque, iusto.</p>
-</div>
-    <div class="imgBx">
+  <div class="contentBx w50">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur ex libero, nam accusamus voluptatum <br> deleniti ducimus doloremque vitae sapiente voluptates illum fugiat tempore quae similique quia quo! Doloremque, iusto.</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempore alias quam, distinctio aliquam porro sapiente deleniti incidunt, at quis minus vel vero ullam beatae repudiandae temporibus eum quia ducimus!</div>
+    <div class="w50">
+    <%= image_tag "key.jpg", clas:"img" %>
     </div>
 </div>
 </section>
+<section class="services">
+  <div class="heading white">
+    <h2>Services</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, deleniti, magnam voluptas, ipsa in aliquid accusantium nostrum numquam similique ex ratione ad esse nobis quibusdam quae recusandae vel minima dolorum.</p>
+</div>
+<div class="content">
+  <div class="servicesBx">
+    <i class="fa-solid fa-paintbrush"></i>
+      <h2>Web Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque tenetur cupiditate consectetur vel et harum, explicabo quo assumenda quibusdam doloremque est a unde molestiae nam quae autem odit aliquid?</p>
+</div>
+<div class="servicesBx">
+  <i class="fa-solid fa-desktop"></i>
+    <h2>Web Design</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque tenetur cupiditate consectetur vel et harum, explicabo quo assumenda quibusdam doloremque est a unde molestiae nam quae autem odit aliquid?</p>
+</div>
+<div class="servicesBx">
+  <i class="fa-solid fa-camera"></i>
+    <h2>Web Design</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident atque tenetur cupiditate consectetur vel et harum, explicabo quo assumenda quibusdam doloremque est a unde molestiae nam quae autem odit aliquid?</p>
+</div>
+</div>
+</section>
+
+<section class="work">
+<div class="heading">
+<h2>My projects</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae quam reiciendis delectus, nulla sequi nisi voluptas perferendis enim nemo laboriosam, excepturi repellendus odit dignissimos eveniet obcaecati! Possimus, aperiam dolor.</p>
+</div>
+<div class="content">
+<div class="workBx">
+<%= image_tag "bastien-plu-1y2FZgvE1F4-unsplash.jpg"%>
+</div>
+<div class="workBx">
+<%= image_tag "bastien-plu-1y2FZgvE1F4-unsplash.jpg"%>
+</div>
+<div class="workBx">
+<%= image_tag "bastien-plu-1y2FZgvE1F4-unsplash.jpg"%>
+</div>
+<div class="workBx">
+<%= image_tag "sophie-UXIXa5fDI7s-unsplash.jpg"%>
+</div>
+</div>
+</section>
+<script type="text/javascript">
+window.addEventListener('scroll',function (){
+  var header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+</script>

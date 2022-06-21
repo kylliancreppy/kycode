@@ -1,60 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 
-nav {
-    display: flex;
-    align-items: center;
-    background-color: #f8f354;
-    color: black;
-    padding:20px;
-    top:0;
-    left:0;
-    position: absolute;
-    width: 100%;
-  }
+}
 
-  .navbar-brand {
-    color: white;
-    text-decoration: none;
-    margin-left: 3rem;
-    font-family: 'Pokemon X and Y';
-    font-size: 2rem;
-    text-shadow: 1px 1px #222324, 1px 1px #222324, 1px 2px #222324;
-    margin-bottom: 1rem;
-  }
+section {
+  padding: 100px;
+}
 
-  nav li {
-    display: inline-block;
-  }
+header {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
 
-  .itemcontent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-weight: bold;
-  }
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 
-  
-.navbar-n {
-    display: flex;
-    align-items: center;
-   
-  }
+}
 
-  .nav-link {
-    color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1.5rem;
-    font-family: 'Tungsten-Bold' ,arial,georgia,sans-serif;
-    text-decoration: none;
-  }
+header.sticky ul li a  {
+  color: #111;
+}
 
-  li {
-    text-decoration: none;
-  }
+header.sticky .logo {
+  color: #111;
+}
+
+
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Pokemon X and Y';
+  text-shadow: 1px 1px #222324, 1px 1px #222324, 1px 2px #222324;
+}
+
+header ul {
+  position:relative;
+  display: flex;
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background:url(smile2.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 3em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.banner h2 span {
+
+  font-size: 1.5em;
+  font-weight: 900;
+
+}
+
+.banner h3 {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+
+}
+
+
+.btn {
+  background: #f8f354 ;
+  color: #ffff;
+  display: inline-block;
+  text-decoration: none;
+  padding:10px 30px;
+  margin-top: 1rem;
+}
+
+.logoText {
+  position: absolute;
+  top:40px;
+  left: 100px;
+  font-size: 1.2em;
+  letter-spacing: 1px; 
+  background: #f8f354;
+  color: #fff;
+  font-family: 'Pokemon X and Y';
+  padding:10px;
+  text-shadow: 1px 1px #222324, 1px 1px #222324, 1px 2px #222324;
+}
+
+.heading {
+
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color : #111;
+}
+
+.heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBx {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contentBx {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.w50 {
+  min-width: 50%;
+}
+
+img {
+  margin-left: 2rem;
+  max-width: 100%;
+}
+
+.heading.white {
+  color: #fff;
+}
+
+.services {
+  background: #111;
+}
+
+.services .content {
+  display: flex;
+  justify-content: center;
+
+}
+
+.services .content .servicesBx {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+.services .content .servicesBx:hover {
+  background: #a7a10d;
+}
+
+.services .content .servicesBx i {
+  font-size: 2em;
+}
+
+.services .content .servicesBx h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.work .content {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work .content .workBx {
+  width: 50%;
+  padding: 20px;
+}
+
+.work .content .workBx img {
+  max-width: 100%;
+}
 /* 
   .container {
     display: flex;
@@ -158,125 +316,5 @@ nav {
 
   }
 */
-
-section {
-  min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-}
-
-.banner {
-  position: relative;
-  width: 100%;
-}
-
-
-.banner .imgSide img  {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-}
-
-.banner .contentBx {
-  position: absolute ;
-  top:0;
-  left:100px;
-  width: calc(100% - 500px);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner .contentBx h4 {
-margin:0;
-  font-size: 1.5em;
-  color: #333;
-  font-weight: 300;
-}
-
-.banner .contentBx h4 span {
-  color:#f8f354;
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.banner .contentBx h2 {
-  font-size: 3em;
-  color: #333;
-  line-height: 1em;
-  margin-top:0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.btn {
-  background: #f8f354 ;
-  color: #ffff;
-  display: inline-block;
-  text-decoration: none;
-  padding:10px 30px;
-  margin-top: 1rem;
-}
-
-.about {
-  width: 100%;
-  text-align: center;
-}
-
-.title h2 {
-  position: relative;
-  color:#f8f354;
-  font-size: 1.8em;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.title p {
-  max-width: 700px;
-  display: inline-block;
-  color: #fff;
-}
-.title h2::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  width: 60px;
-  height: 4px;
-  background: #fff;
-}
-
-.about {
-  background: #000;
-}
-
-.about .content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.about .content .textBx {
-  min-width: 49%;
-  width: 49%;
-}
-
-.about .content .textBx p {
-  color:#fff;
-}
-
-.about .content .imgBx {
-  margin-left: 40px;
-}
-
-.about .content .imgBx img {
-  max-width: 100%;
-
-}
-
 
 
