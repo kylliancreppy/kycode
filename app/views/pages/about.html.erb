@@ -1,84 +1,14 @@
-<!-- <nav>
-  <%= link_to about_path, class: "navbar-brand" do %>
-    <%= "kycode" %>
-    <% end %>
-    <ul class="navbar-n">
-  <li>
- <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "à propos" %>
- </div>
- <% end %>
- </div>
- </li>
- <li>
- <div class="navitem"><%= link_to projects_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "projets" %>
- </div>
- <% end %>
- </div>
- </li>
- <li>
- <div class="navitem"><%= link_to projects_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "Réseaux" %>
- </div>
- <% end %>
- </div>
- </li>
-  <li>
- <div class="navitem"><%= link_to projects_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "RANKING" %>
- </div>
- <% end %>
- </div>
- </li>
- </ul>
-</nav> 
--->
-
-<!--
-<div class="container">
-<div class="card">
-    <div class="pic">
-        <%= image_tag "profile (2).jpg" %>
-    </div>
-    <div class="content">
-        <div class="details">
-            <h2>Kyllian Creppy <br><span>Développeur Full-stack junior</span></h2>
-            <div class="desc">
-            <h3>Bonjour, je suis Kyllian Creppy, Développeur Full-stack junior basé en Île-de-France. Je suis à la recherche d'un contrat alternance pour septembre 2022.</h3>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
--->
 <header>
 <%= link_to about_path, class:"logo" do %>
  <%= "kycode" %>
   <% end %>
 <div class="toggle"></div>
 <ul>
-<li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "À propos" %>
-  <% end %></li>
-  <li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "Services" %>
-  <% end %></li>
-<li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "Projets" %>
-  <% end %></li>
-<li> <div class="navitem"><%= link_to about_path, class:"nav-link" do %>
- <div class="itemcontent">
- <%= "Réseaux" %>
-  <% end %></li>
+<li><a href="#about">À propos</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#work">Projets</a></li>
+<li><a href="#social">Réseaux</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </header>
 </div>
@@ -96,7 +26,7 @@
 </section>
 
 
-<section class="about">
+<section class="about" id="about">
   <div class="heading">
     <h2>À propos de moi</h2>
   </div>
@@ -109,7 +39,7 @@
     </div>
 </div>
 </section>
-<section class="services">
+<section class="services" id="services">
   <div class="heading white">
     <h2>Services</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, deleniti, magnam voluptas, ipsa in aliquid accusantium nostrum numquam similique ex ratione ad esse nobis quibusdam quae recusandae vel minima dolorum.</p>
@@ -133,7 +63,7 @@
 </div>
 </section>
 
-<section class="work">
+<section class="work" id="work">
 <div class="heading">
 <h2>My projects</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae quam reiciendis delectus, nulla sequi nisi voluptas perferendis enim nemo laboriosam, excepturi repellendus odit dignissimos eveniet obcaecati! Possimus, aperiam dolor.</p>
@@ -157,7 +87,7 @@
                         <%= "Voir plus" %>
                         <% end %></div>
 </section>
-<section class="social">
+<section class="social" id="social">
 <div class="heading white">
 <h2>Réseaux sociaux</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus quis error non aperiam nesciunt consequuntur aliquam quam odio assumenda, ipsam quidem incidunt, distinctio dignissimos molestiae necessitatibus culpa! Minus, optio!</p>
@@ -178,6 +108,30 @@
 <div class="socialBx">
 <i class="fa-brands fa-linkedin"></i>
 </div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="heading">
+    <h2>Contactez-moi</h2>
+</div>
+<div class="content">
+  <div class="contactInfo">
+    <div class="box">
+      <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="text">
+          <h3>Téléphone</h3>
+            <p>06 50 82 42 55</p>
+        </div>
+      </div>
+    <div class="box">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+                <p>kyllian.creppy@outlook.fr</p>
+            </div>
+          </div>
+    </div>
 </div>
 </section>
 

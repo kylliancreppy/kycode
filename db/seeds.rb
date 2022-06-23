@@ -8,12 +8,12 @@ require 'open-uri'
 #   Character.create(name: 'Luke', movie: movies.first)
 Project.destroy_all
 
-def set_project(name, description, date)
+def set_project(name, description, date, url)
     file = URI.open(url)
     project = Project.new(
         name: name,
         description: description,
-        date:   date
+        category: category
     )
 
     project.photo.attach(io: file, filename: 'image.png')
@@ -21,9 +21,10 @@ def set_project(name, description, date)
 end 
 
     projects = [
-        {name: "Helpers", photo: "https://www.bainssuroust.fr/medias/2020/03/ADMR_baseline_JPG-scaled.jpg", description: "154, Rue des Pyrénées, Paris", date: 2021},
+        {name: "Helpers", photo: "app/assets/images/key.jpg", description: "Rue des Pyrénées, Paris", category:"Website"},
+        {name: "Valorank", photo: "app/assets/images/key.jpg", description: "Rue des Pyrénées, Paris", category:"Website"}
     ]
 
     projects.each do |project|
-        set_project(project[:name], project[:photo], project [:description], project[:date])
+        set_project(project[:name], project[:photo], project [:description],  project [:category])
     end
