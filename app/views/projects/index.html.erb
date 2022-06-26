@@ -1,4 +1,10 @@
 <h1>²OUI</h1>
 <% @projects.each do |project| %>
-<%= project.name %>
+<% if project.photo.attached? %>
+<%= link_to project_path(project) do %>
+<%= cl_image_tag project.photo.key %>
+<% end %>
+
+<% end %>
+
 <% end %>

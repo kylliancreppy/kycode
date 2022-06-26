@@ -81,6 +81,20 @@
 <div class="workBx">
 <%= image_tag "sophie-UXIXa5fDI7s-unsplash.jpg"%>
 </div>
+<div class="workBx">
+<% @projects.each do |project| %>
+<% if project.photo.attached? %>
+<%= link_to project_path(@project) do %>
+<%= cl_image_tag project.photo.key %>
+<% end %>
+<% end %>
+
+</div>
+</div>
+
+
+<% end %>
+</div>
 </div>
 <div class="heading">
 <%= link_to about_path, class:"btn" do %>

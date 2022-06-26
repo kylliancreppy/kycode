@@ -8,7 +8,7 @@ require 'open-uri'
 #   Character.create(name: 'Luke', movie: movies.first)
 Project.destroy_all
 
-def set_project(name, description, date, url)
+def set_project(name, description, category, url)
     file = URI.open(url)
     project = Project.new(
         name: name,
